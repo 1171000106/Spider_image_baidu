@@ -17,6 +17,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import URLdownload.URLdownload;
 
 public class Spider_image_baidu {
 
@@ -24,9 +25,9 @@ public class Spider_image_baidu {
      * @param args the command line arguments
      * @throws java.net.MalformedURLException
      */
-    /*
-    * FileWriter(FileName ,boolean append );
-        FileWriter("XXXX",true)表示追加输入，否则表示覆盖输入
+    /** 
+     * FileWriter(FileName ,boolean append );
+     *  FileWriter("XXXX",true)表示追加输入，否则表示覆盖输入
      */
     static String Gen = "https://image.baidu.com/search/index?tn=baiduimage&utf-8&word=";
     static Scanner cin = new Scanner(System.in);
@@ -107,7 +108,9 @@ public class Spider_image_baidu {
         } catch (IOException ex) {
             Logger.getLogger(Spider_image_baidu.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
+        URLdownload Qc = new URLdownload(Target);
+        
     }
 
 }
