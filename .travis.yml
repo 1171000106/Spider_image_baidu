@@ -1,2 +1,2 @@
 language: java
-jdk: jdk1.8
+jdk: oraclejdk8
